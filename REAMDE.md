@@ -20,4 +20,4 @@ If you want to clone the project and play around please install all the dependen
 
 Don't forget also to rename the credentials file config/dev.js.example by removing "example" and replace the values by your own keys.
 
-** Note **: You can use a module like dotenv to manage your env vars.
+**Note**: You can use a module like dotenv to manage your env vars.
