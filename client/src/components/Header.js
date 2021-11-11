@@ -29,7 +29,7 @@ class Header extends Component {
                         to={this.props.auth ? '/surveys' : '/'} 
                         className="brand-logo"
                     >
-                        Xmail
+                        Xmaily
                     </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         { this.renderContent() }
