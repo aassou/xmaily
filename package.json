@@ -1,0 +1,35 @@
+{
+  "name": "node_with_react_fullstack_dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.9.1",
+    "npm": "7.21.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.8",
+    "nodemon": "^2.0.13",
+    "npm": "^8.0.0",
+    "passport": "^0.5.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path-parser": "^6.1.0",
+    "react-stripe-checkout": "^2.6.3",
+    "sendgrid": "^5.2.3",
+    "stripe": "^8.182.0"
+  }
+}
